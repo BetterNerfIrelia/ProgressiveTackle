@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+
+<script>
+
+//Modal 1
+
+var counterA = 1;
+
+function addCustomerA() {
+  if (counterA <= 2) {
+    if (counterA === 1) {
+      document.getElementById('customerA1').style.cssText = 'display:inline;';
+    } if (counterA === 2) {
+      document.getElementById('customerA2').style.cssText = 'display:inline;';
+      document.getElementById('customerButtonA').style.cssText = 'display:none;';
+      document.getElementById('maxCustomerA').style.cssText = 'display:inline; color:#00e600;';
+    }
+    counterA++;
+  }
+}
+
+function removeCustomerA1(){
+  document.getElementById('customerA1').style.cssText = 'display:none;';
+  if(counterA === 3){
+    document.getElementById('maxCustomerA').style.cssText = 'display:none; color:#00e600;';
+    document.getElementById('customerButtonA').style.cssText = 'display:inline;';
+  }
+  counterA--;
+  
+}
+
+function removeCustomerA2(){
+  document.getElementById('customerA2').style.cssText = 'display:none;';
+  if(counterA === 3){
+    document.getElementById('maxCustomerA').style.cssText = 'display:none; color:#00e600;';
+    document.getElementById('customerButtonA').style.cssText = 'display:inline;';
+  }
+  counterA--;
+}
+
+//Modal2
+
+  var counterB = 1;
+
+  function addCustomerB() {
+    if (counterB <= 2) {
+      if (counterB === 1) {
+        document.getElementById('customerB1').style.cssText = 'display:inline;';
+      } if (counterB === 2) {
+        document.getElementById('customerB2').style.cssText = 'display:inline;';
+        document.getElementById('customerButtonB').style.cssText = 'display:none;';
+        document.getElementById('maxCustomerB').style.cssText = 'display:inline; color:#00e600;';
+      }
+      counterB++;
+    }
+  }
+
+  function removeCustomerB1(){
+    document.getElementById('customerB1').style.cssText = 'display:none;';
+    if(counterB === 3){
+      document.getElementById('maxCustomerB').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonB').style.cssText = 'display:inline;';
+    }
+    counterB--;
+    
+  }
+
+  function removeCustomerB2(){
+    document.getElementById('customerB2').style.cssText = 'display:none;';
+    if(counterB === 3){
+      document.getElementById('maxCustomerB').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonB').style.cssText = 'display:inline;';
+    }
+    counterB--;
+  }
+
+  //Modal3
+
+  var counterC = 1;
+
+  function addCustomerC() {
+    if (counterC <= 2) {
+      if (counterC === 1) {
+        document.getElementById('customerC1').style.cssText = 'display:inline;';
+      } if (counterC === 2) {
+        document.getElementById('customerC2').style.cssText = 'display:inline;';
+        document.getElementById('customerButtonC').style.cssText = 'display:none;';
+        document.getElementById('maxCustomerC').style.cssText = 'display:inline; color:#00e600;';
+      }
+      counterC++;
+    }
+  }
+
+  function removeCustomerC1(){
+    document.getElementById('customerC1').style.cssText = 'display:none;';
+    if(counterC === 3){
+      document.getElementById('maxCustomerC').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonC').style.cssText = 'display:inline;';
+    }
+    counterC--;
+    
+  }
+
+  function removeCustomerC2(){
+    document.getElementById('customerC2').style.cssText = 'display:none;';
+    if(counterC === 3){
+      document.getElementById('maxCustomerC').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonC').style.cssText = 'display:inline;';
+    }
+    counterC--;
+  }
+
+  //Modal4
+
+  var counterD = 1;
+
+  function addCustomerD() {
+    if (counterD <= 2) {
+      if (counterD === 1) {
+        document.getElementById('customerD1').style.cssText = 'display:inline;';
+      } if (counterD === 2) {
+        document.getElementById('customerD2').style.cssText = 'display:inline;';
+        document.getElementById('customerButtonD').style.cssText = 'display:none;';
+        document.getElementById('maxCustomerD').style.cssText = 'display:inline; color:#00e600;';
+      }
+      counterD++;
+    }
+  }
+
+  function removeCustomerD1(){
+    document.getElementById('customerD1').style.cssText = 'display:none;';
+    if(counterD === 3){
+      document.getElementById('maxCustomerD').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonD').style.cssText = 'display:inline;';
+    }
+    counterD--;
+    
+  }
+
+  function removeCustomerD2(){
+    document.getElementById('customerD2').style.cssText = 'display:none;';
+    if(counterD === 3){
+      document.getElementById('maxCustomerD').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonD').style.cssText = 'display:inline;';
+    }
+    counterD--;
+  }
+
+  //Modal5
+
+  var counterE = 1;
+
+  function addCustomerE() {
+    if (counterE <= 2) {
+      if (counterE === 1) {
+        document.getElementById('customerE1').style.cssText = 'display:inline;';
+      } if (counterE === 2) {
+        document.getElementById('customerE2').style.cssText = 'display:inline;';
+        document.getElementById('customerButtonE').style.cssText = 'display:none;';
+        document.getElementById('maxCustomerE').style.cssText = 'display:inline; color:#00e600;';
+      }
+      counterE++;
+    }
+  }
+
+  function removeCustomerE1(){
+    document.getElementById('customerE1').style.cssText = 'display:none;';
+    if(counterE === 3){
+      document.getElementById('maxCustomerE').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonE').style.cssText = 'display:inline;';
+    }
+    counterE--;
+    
+  }
+
+  function removeCustomerE2(){
+    document.getElementById('customerE2').style.cssText = 'display:none;';
+    if(counterE === 3){
+      document.getElementById('maxCustomerE').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonE').style.cssText = 'display:inline;';
+    }
+    counterE--;
+  }
+
+  //Modal6
+
+  var counterF = 1;
+
+  function addCustomerF() {
+    if (counterF <= 2) {
+      if (counterF === 1) {
+        document.getElementById('customerF1').style.cssText = 'display:inline;';
+      } if (counterF === 2) {
+        document.getElementById('customerF2').style.cssText = 'display:inline;';
+        document.getElementById('customerButtonF').style.cssText = 'display:none;';
+        document.getElementById('maxCustomerF').style.cssText = 'display:inline; color:#00e600;';
+      }
+      counterF++;
+    }
+  }
+
+  function removeCustomerF1(){
+    document.getElementById('customerF1').style.cssText = 'display:none;';
+    if(counterF === 3){
+      document.getElementById('maxCustomerF').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonF').style.cssText = 'display:inline;';
+    }
+    counterF--;
+    
+  }
+
+  function removeCustomerF2(){
+    document.getElementById('customerF2').style.cssText = 'display:none;';
+    if(counterF === 3){
+      document.getElementById('maxCustomerF').style.cssText = 'display:none; color:#00e600;';
+      document.getElementById('customerButtonF').style.cssText = 'display:inline;';
+    }
+    counterF--;
+  }
+
+</script>
+
+  <title>Progressive Tackle</title>
+  <style>
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #navigation{
+    position: absolute;
+  }
+
+  #header-facebook{
+display: none;
+}
+#header-instagram{
+display: none;
+}
+
+
+
+
+  #datenschutz{
+  overflow-y: scroll; 
+  padding: 20px;
+}
+
+  #zbarsch{
+  border: white solid 10px; 
+  margin-bottom: 50px; 
+  background-image: url('zbarsch50.jpg'); 
+  background-size: 690px;
+  }
+
+  #zcoach{
+  border: white solid 10px; 
+  margin-bottom: 50px; 
+  background-image: url('zcoach50.jpg'); 
+  background-size: 1400px;  
+  }
+
+#zstoer{
+  background-size: 1380px;
+}
+
+#zallin{
+  background-size: 1400px !important;
+}
+
+
+#zhecht{
+  background-size: 1400px;
+}
+
+
+
+#prod{
+  margin-left: 0;
+}
+
+
+#header-mail{
+  display: none;
+}
+
+.navbar-brand {
+  color: black !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color:#00e600;
+      font-size: 1rem;
+    }
+
+    
+
+    
+    .navbar-alt {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+      padding: 10px;
+    }
+
+  
+
+    .navbar-alt .nav-link {
+      color:#00e600;
+      font-size: 1rem;
+
+    }
+
+    .navbar-alt .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+
+    a:hover{
+      text-decoration: none !important;
+    }
+
+    
+
+
+
+
+}
+
+@media screen and (min-width: 1001px) {
+
+  body{
+    background-color: transparent !important;
+  }
+
+
+
+  #datenschutz{
+  height: 500px; 
+  width: 470px; 
+  overflow-y: scroll; 
+  padding: 20px;
+}
+  
+
+  #zbarsch{
+  border: white solid 10px; 
+  margin-bottom: 50px; 
+  background-image: url('zbarsch50.jpg'); 
+  background-size: 1095px;
+  }
+
+  #zcoach{
+  border: white solid 10px; 
+  margin-bottom: 50px; 
+  background-image: url('zcoach50.jpg'); 
+  background-size: 1090px;  
+  }
+
+  #zstoer{
+  background-size: 1100px;
+}
+
+#zallin{
+  background-size: 1230px;
+}
+
+#zhecht{
+  background-size: 1230px;
+}
+
+
+  #prod{
+  margin-left: 38%;
+}
+
+#dsgvo:hover{
+  cursor: pointer;
+}
+
+.btn:hover{
+color: #00e600 !important;
+}
+
+#btnDisabled:hover{
+color: red !important;
+}
+
+    .navbar-brand {
+      color: white !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-size: 1rem;
+    }
+
+    .navbar {
+      background-color: transparent !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar:hover {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar-alt {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar:hover .nav-link {
+      color: black !important;
+      font-size: 1rem;
+
+    }
+
+    .navbar-alt .nav-link {
+      color: black !important;
+      font-size: 1rem;
+
+    }
+
+    .navbar:hover .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+
+    .navbar-alt .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+    a:hover{
+      text-decoration: none !important;
+    }
+
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+}
+</style>
+</head>
+
+<body>  <!-- Navigation -->
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+        <a style="font-family: 'Orbitron'; margin-top: 5px;" class="navbar-brand" href="index.html">Progressive Tackle</a>
+
+      <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+          <img src="facebook_inverted.png" width="20px" alt="fb" id="header-facebook">
+        </a>
+        <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+          <img src="instagram_inverted.png" width="20px" alt="insta" id="header-instagram" style="margin-right: 10px; margin-left: 10px">
+        </a>
+        <a href="mailto:daniel@progressive-tackle.de">
+          <img src="mail_inverted.png" width="20px" height="20px" alt="mail" id="header-mail" style="margin-right: 20px;">
+        </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="coaching.html" style="color: #00e600  !important">Coaching
+              <span class="sr-only">(current)</span>
+            </a>       
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tackle.html">Tackle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="xseries.html">X-Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partner.html">Partner</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<header></header>
+
+  
+
+       <!-- Modal1 -->
+
+       <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Zielfisch%20Zander%20Rookie" method="post" enctype="text/plain">
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: black; color: white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Zielfisch Zander Rookie</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color: white">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="align-items: flex-start">          
+        
+       
+     <!-- Customer0 -->
+
+  <div class="form-group" style="text-align: left" id="customerA0">    
+
+    <label for="exampleFormControlInput1">Vorname*</label>
+    <input name="VornameTeilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+    <label for="exampleFormControlInput1">Nachname*</label>
+    <input name="NachnameTeilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+    <label for="exampleFormControlInput1">Email Adresse</label>
+    <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+
+    <label for="exampleFormControlInput1">Telefonnummer*</label>
+    <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+    <label for="exampleFormControlInput1">Geburtsjahr*</label>
+    <input name="GeburtsjahrTeilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+    <label for="exampleFormControlInput1">Startdatum*</label>
+    <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+
+    <label for="exampleFormControlInput1">Enddatum*</label>
+    <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+
+  <div class="form-group">
+      <br>
+
+           <!-- Customer1 -->
+
+      <div class="form-group" id="customerA1" style="text-align: left; display: none;" >   
+
+          <label for="exampleFormControlInput1">Vorname*</label>          
+          <button type="button" id="removeCustomerA1Button" onclick="removeCustomerA1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+          <input name="VornameTeilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="NachnameTeilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="GeburtsjahrTeilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+
+          <br>
+      </div>
+
+           <!-- Customer2 -->
+
+      <div class="form-group" id="customerA2" style="text-align: left; display: none;" >    
+         
+        <label for="exampleFormControlInput1">Vorname*</label>
+          <button type="button" id="removeCustomerA2Button" onclick="removeCustomerA2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+          <input name="VornameTeilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="NachnameTeilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="GeburtsjahrTeilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+          <br>
+      </div>
+      <button type="button" id="customerButtonA" onclick="addCustomerA();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+
+   <div class="form-group">
+      <label for="exampleFormControlTextarea1" id="maxCustomerA"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+      <br><br>
+
+           <!-- Footer -->
+
+    <label for="exampleFormControlTextarea1">Nachricht</label>
+    <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <br>
+    <input type="checkbox" required  >
+    <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+  </div>
+</div>
+</div>
+</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+          <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+
+    <!-- Modal2 -->
+
+    <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Zielfisch%20Zander%20Coaching" method="post" enctype="text/plain">
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Zielfisch Zander Coaching</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="align-items: flex-start">          
+              
+             
+           <!-- Customer0 -->
+      
+        <div class="form-group" style="text-align: left" id="customerB0">    
+      
+          <label for="exampleFormControlInput1">Vorname*</label>
+          <input name="Vorname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="Nachname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Email Adresse</label>
+          <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+      
+          <label for="exampleFormControlInput1">Telefonnummer*</label>
+          <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="Geburtsjahr Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Startdatum*</label>
+          <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Enddatum*</label>
+          <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+      
+        <div class="form-group">
+            <br>
+      
+                 <!-- Customer1 -->
+      
+            <div class="form-group" id="customerB1" style="text-align: left; display: none;" >   
+      
+                <label for="exampleFormControlInput1">Vorname*</label>          
+                <button type="button" id="removeCustomerA1Button" onclick="removeCustomerB1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+      
+                <br>
+            </div>
+      
+                 <!-- Customer2 -->
+      
+            <div class="form-group" id="customerB2" style="text-align: left; display: none;" >    
+               
+              <label for="exampleFormControlInput1">Vorname*</label>
+                <button type="button" id="removeCustomerA2Button" onclick="removeCustomerB2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+                <br>
+            </div>
+            <button type="button" id="customerButtonB" onclick="addCustomerB();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+      
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="maxCustomerB"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+            <br><br>
+      
+                 <!-- Footer -->
+      
+          <label for="exampleFormControlTextarea1">Nachricht</label>
+          <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+          <input type="checkbox" required  >
+          <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+        </div>
+      </div>
+      </div>
+      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+                <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+
+         <!-- Modal3 -->
+
+    <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Hecht%20und%20Barsch%20Session" method="post" enctype="text/plain">
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Hecht & Barsch Session</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="align-items: flex-start">          
+              
+             
+           <!-- Customer0 -->
+      
+        <div class="form-group" style="text-align: left" id="customerC0">    
+      
+          <label for="exampleFormControlInput1">Vorname*</label>
+          <input name="Vorname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="Nachname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Email Adresse</label>
+          <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+      
+          <label for="exampleFormControlInput1">Telefonnummer*</label>
+          <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="Geburtsjahr Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Startdatum*</label>
+          <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Enddatum*</label>
+          <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+      
+        <div class="form-group">
+            <br>
+      
+                 <!-- Customer1 -->
+      
+            <div class="form-group" id="customerC1" style="text-align: left; display: none;" >   
+      
+                <label for="exampleFormControlInput1">Vorname*</label>          
+                <button type="button" id="removeCustomerC1Button" onclick="removeCustomerC1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+      
+                <br>
+            </div>
+      
+                 <!-- Customer2 -->
+      
+            <div class="form-group" id="customerC2" style="text-align: left; display: none;" >    
+               
+              <label for="exampleFormControlInput1">Vorname*</label>
+                <button type="button" id="removeCustomerC2Button" onclick="removeCustomerC2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+                <br>
+            </div>
+            <button type="button" id="customerButtonC" onclick="addCustomerC();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+      
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="maxCustomerC"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+            <br><br>
+      
+                 <!-- Footer -->
+      
+          <label for="exampleFormControlTextarea1">Nachricht</label>
+          <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+          <input type="checkbox" required  >
+          <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+        </div>
+      </div>
+      </div>
+      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+                <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+
+           <!-- Modal4 -->
+
+    <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Salmoniden%20Guiding" method="post" enctype="text/plain">
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Salmoniden Guiding</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="align-items: flex-start">          
+              
+             
+           <!-- Customer0 -->
+      
+        <div class="form-group" style="text-align: left" id="customerD0">    
+      
+          <label for="exampleFormControlInput1">Vorname*</label>
+          <input name="Vorname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="Nachname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Email Adresse</label>
+          <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+      
+          <label for="exampleFormControlInput1">Telefonnummer*</label>
+          <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="Geburtsjahr Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Startdatum*</label>
+          <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Enddatum*</label>
+          <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+      
+        <div class="form-group">
+            <br>
+      
+                 <!-- Customer1 -->
+      
+            <div class="form-group" id="customerD1" style="text-align: left; display: none;" >   
+      
+                <label for="exampleFormControlInput1">Vorname*</label>          
+                <button type="button" id="removeCustomerD1Button" onclick="removeCustomerD1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+      
+                <br>
+            </div>
+      
+                 <!-- Customer2 -->
+      
+            <div class="form-group" id="customerD2" style="text-align: left; display: none;" >    
+               
+              <label for="exampleFormControlInput1">Vorname*</label>
+                <button type="button" id="removeCustomerD2Button" onclick="removeCustomerD2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+                <br>
+            </div>
+            <button type="button" id="customerButtonD" onclick="addCustomerD();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+      
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="maxCustomerD"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+            <br><br>
+      
+                 <!-- Footer -->
+      
+          <label for="exampleFormControlTextarea1">Nachricht</label>
+          <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+          <input type="checkbox" required  >
+          <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+        </div>
+      </div>
+      </div>
+      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+                <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      
+        <!-- Modal5 -->
+
+    <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Stör%20Guiding" method="post" enctype="text/plain">
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Stör Guiding</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="align-items: flex-start">          
+              
+             
+           <!-- Customer0 -->
+      
+        <div class="form-group" style="text-align: left" id="customerE0">    
+      
+          <label for="exampleFormControlInput1">Vorname*</label>
+          <input name="Vorname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="Nachname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Email Adresse</label>
+          <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+      
+          <label for="exampleFormControlInput1">Telefonnummer*</label>
+          <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="Geburtsjahr Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Startdatum*</label>
+          <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Enddatum*</label>
+          <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+      
+        <div class="form-group">
+            <br>
+      
+                 <!-- Customer1 -->
+      
+            <div class="form-group" id="customerE1" style="text-align: left; display: none;" >   
+      
+                <label for="exampleFormControlInput1">Vorname*</label>          
+                <button type="button" id="removeCustomerE1Button" onclick="removeCustomerE1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+      
+                <br>
+            </div>
+      
+                 <!-- Customer2 -->
+      
+            <div class="form-group" id="customerE2" style="text-align: left; display: none;" >    
+               
+              <label for="exampleFormControlInput1">Vorname*</label>
+                <button type="button" id="removeCustomerE2Button" onclick="removeCustomerE2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+                <br>
+            </div>
+            <button type="button" id="customerButtonE" onclick="addCustomerE();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+      
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="maxCustomerE"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+            <br><br>
+      
+                 <!-- Footer -->
+      
+          <label for="exampleFormControlTextarea1">Nachricht</label>
+          <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+          <input type="checkbox" required  >
+          <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+        </div>
+      </div>
+      </div>
+      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+                <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      
+      
+          <!-- Modal6 -->
+
+    <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%All-in-Tour" method="post" enctype="text/plain">
+      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; All-in-Tour</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="align-items: flex-start">          
+              
+             
+           <!-- Customer0 -->
+      
+        <div class="form-group" style="text-align: left" id="customerF0">    
+      
+          <label for="exampleFormControlInput1">Vorname*</label>
+          <input name="Vorname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Nachname*</label>
+          <input name="Nachname Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Email Adresse</label>
+          <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+      
+          <label for="exampleFormControlInput1">Telefonnummer*</label>
+          <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Geburtsjahr*</label>
+          <input name="Geburtsjahr Teilnehmer1" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Startdatum*</label>
+          <input name="Startdatum" type="date"class="form-control" id="exampleFormControlInput1" required>
+      
+          <label for="exampleFormControlInput1">Enddatum*</label>
+          <input name="Enddatum" type="date" class="form-control" id="exampleFormControlInput1" required>
+      
+        <div class="form-group">
+            <br>
+      
+                 <!-- Customer1 -->
+      
+            <div class="form-group" id="customerF1" style="text-align: left; display: none;" >   
+      
+                <label for="exampleFormControlInput1">Vorname*</label>          
+                <button type="button" id="removeCustomerF1Button" onclick="removeCustomerF1();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer2" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer2"type="text" class="form-control" id="exampleFormControlInput1" required >
+      
+                <br>
+            </div>
+      
+                 <!-- Customer2 -->
+      
+            <div class="form-group" id="customerF2" style="text-align: left; display: none;" >    
+               
+              <label for="exampleFormControlInput1">Vorname*</label>
+                <button type="button" id="removeCustomerF2Button" onclick="removeCustomerF2();" class="btn btn-dark" style="margin-left: 205px; margin-top: 10px; margin-bottom: 10px">- Teilnehmer entfernen</button>
+                <input name="Vorname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname Teilnehmer3" type="text" class="form-control" id="exampleFormControlInput1" required>
+      
+                <label for="exampleFormControlInput1">Geburtsjahr*</label>
+                <input name="Geburtsjahr Teilnehmer3"type="text" class="form-control" id="exampleFormControlInput1" required>
+                <br>
+            </div>
+            <button type="button" id="customerButtonF" onclick="addCustomerF();" class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px">+ Teilnehmer hinzufügen</button>
+      
+         <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="maxCustomerF"style="display: none;">Maximale Teilnehmeranzahl erreicht.</label>
+            <br><br>
+      
+                 <!-- Footer -->
+      
+          <label for="exampleFormControlTextarea1">Nachricht</label>
+          <textarea name="Nachricht" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+          <input type="checkbox" required  >
+          <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+        </div>
+      </div>
+      </div>
+      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+                <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      
+      
+
+
+         <!-- ModalDSGVO -->
+         <div class="modal fade" id="modalDSGVO" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="background-color: black; color: white">
+                    <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Datenschutzbestimmungen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="align-items: flex-start">          
+                    <form>
+                        <div id="datenschutz" >
+                            1. ÜBERSICHT<br><br>
+                            Durch den Besuch der Website des Anbieters können Informationen über den Zugriff (Datum, Uhrzeit, betrachtete Seite) gespeichert werden. Diese Daten gehören nicht zu den personenbezogenen Daten, sondern sind anonymisiert. Sie werden ausschließlich zu statistischen Zwecken ausgewertet. Eine Weitergabe an Dritte, zu kommerziellen oder nichtkommerziellen Zwecken, findet nicht statt.
+                            Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.
+                            Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.
+                            <br><br>
+                            2. IHRE BETROFFENENRECHTE<br><br>
+                            Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
+                            – Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung
+                            – Berichtigung unrichtiger personenbezogener Daten
+                            – Löschung Ihrer bei uns gespeicherten Daten
+                            – Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen
+                            – Widerspruch gegen die Verarbeitung Ihrer Daten bei uns und
+                            – Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben.
+                            Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
+                            <br><br>
+                            3. ZWECKE DER DATENVERARBEITUNG DURCH DIE VERANTWORTLICHE STELLE UND DRITTE<br><br>
+                            Wir verarbeiten Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerklärung genannten Zwecken. Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den genannten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:
+                            – Sie Ihre ausdrückliche Einwilligung dazu erteilt haben
+                            – die Verarbeitung zur Abwicklung eines Vertrags mit Ihnen erforderlich ist
+                            – die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist,
+                            die Verarbeitung zur Wahrung berechtigter Interessen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben.
+                            <br><br>
+                            4. COOKIES<br><br>
+                            Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.
+                            Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen. Anhand der in Cookies enthaltenen Informationen können wir Ihnen die Navigation erleichtern und die korrekte Anzeige unserer Webseiten ermöglichen.
+                            In keinem Fall werden die von uns erfassten Daten an Dritte weitergegeben oder ohne Ihre Einwilligung eine Verknüpfung mit personenbezogenen Daten hergestellt.
+                            Natürlich können Sie unsere Website grundsätzlich auch ohne Cookies betrachten. Internet-Browser sind regelmäßig so eingestellt, dass sie Cookies akzeptieren. Im Allgemeinen können Sie die Verwendung von Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren. Bitte verwenden Sie die Hilfefunktionen Ihres Internetbrowsers, um zu erfahren, wie Sie diese Einstellungen ändern können. Bitte beachten Sie, dass einzelne Funktionen unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.
+                            <br><br>
+                            5. KONTAKTFORMULAR<br><br>
+                            Treten Sie bzgl. Fragen jeglicher Art per E-Mail mit uns in Kontakt, erteilen Sie uns zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten automatisch gelöscht.
+                            <br><br>
+                            6. ÄNDERUNGEN UNSERER DATENSCHUTZBESTIMMUNGEN<br><br>
+                            Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+                          </div>
+          <div class="form-group" style="text-align: left">
+        
+          <div class="form-group">
+        
+           
+           <div class="form-group">
+        
+          </div>
+        </div>
+        </div>
+        </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-dismiss="modal">Schließen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+        
+         <!-- CONTENT -->
+
+
+         <!-- Page Content -->
+  <section class="py-5" style="background-color: black" >
+    <div class="container" style="text-align: center; background-color: black">
+      <br><br><br>
+      <h1 class="display-4" style=" font-family: 'Orbitron'; color: white">Coaching</h1>
+      <br><br><br><br>
+      <div class="card text-center"  id="zcoach" style=" border: white solid 10px; margin-bottom: 50px; background-image: url('zcoach50.jpg');">
+        <div class="card-body">
+          <h3 class="card-title">Zielfisch Zander - Rookie</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 7h - 150€<br>
+            für ambitionierte Einsteiger<br>
+            "Ab jetzt hast du Chancen auf deinen Zielfisch" <br><br></p>
+            <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modal1">
+                Jetzt Anfragen
+              </button>        </div>
+        <div class="card-footer text-muted" style="background-color: #ccffcc !important">
+          Verfügbar
+        </div>
+      </div>
+
+
+  <div id="zcoach" class="card text-center" >
+      <div class="card-body">
+          <h3 class="card-title">Zielfisch Zander - Coaching</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 15h - 275€<br>
+            für Fortgeschrittene und erfahrene Angler <br>
+            Gezieltes Praktizieren moderner aktiv & passiv Techniken<br>
+            "Hier werden Angler-Geheimnisse weitergegeben"<br>
+            <br></p>
+            <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modal2">
+                Jetzt Anfragen
+              </button>          </div>
+        <div class="card-footer text-muted" style="background-color: #ccffcc !important">
+          Verfügbar
+        </div>
+      </div>
+
+
+      <div class="card text-center" id="zbarsch">
+          <div class="card-body">
+          <h3 class="card-title">Hecht & Barsch Session</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 5h - 99€<br>
+            für Hobbyangler & Fortgeschrittene<br>
+            "Uferangeln auf Räuber"<br>
+            <br></p>
+            <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modal3">
+                Jetzt Anfragen
+              </button>        </div>
+              <div class="card-footer text-muted" style="background-color: #ccffcc !important">
+                  Verfügbar
+                </div>
+      </div>
+
+
+
+
+
+      <div class="card text-center" style=" border: white solid 10px; margin-bottom: 50px; background-image: url('ztrout50.jpg'); background-size: 1090px;">
+          <div class="card-body">
+          <h3 class="card-title">Salmoniden Guiding</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 10h - 150€<br>
+            Tagesausflug für erfahrene und angehende Angler<br>
+            "Spezieller Fokus auf Salmo-Spinfishing"<br>
+            <br></p>
+            <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modal4">
+                Jetzt Anfragen
+              </button>        </div>
+              <div class="card-footer text-muted" style="background-color: #ccffcc !important">
+                  Verfügbar
+                </div>
+      </div>
+
+
+
+
+
+
+      <div class="card text-center" id="zstoer"style=" border: white solid 10px; margin-bottom: 50px; background-image: url('zstör50.jpg'); ">
+          <div class="card-body"> 
+          <h3 class="card-title">Stör Guiding</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 2 Tage 2 Personen all inklusive - 599€<br>
+            Ansitzangeln für Camping Fans <br>
+    
+            Transfer ab Lindau / Bregenz<br>
+            "Zelten an der Wasserkante"<br><br></p>
+            <button type="button" class="btn btn-lg btn-dark" id="btnDisabled" data-toggle="modal" data-target="#modal5" disabled >
+                Jetzt Anfragen
+              </button>          </div>
+        <div class="card-footer text-muted" style="background-color: #ffc2b3 !important">
+          Momentan leider nicht Verfügbar
+        </div>
+      </div>
+
+
+
+
+      <div class="card text-center" id="zhecht"style=" border: white solid 10px; margin-bottom: 50px; background-image: url('zhecht50.jpg'); ">
+          <div class="card-body">
+          <h3 class="card-title">All-in-Tour</h3>
+          <br>
+          <p class="card-text" style="font-weight: 500; font-size: 20px"> 40h - 599€<br>
+            für Hardcore Angler<br>
+            3 verschiedene Gewässer<br>
+            Nach der Tour kann bis zu 16 Stunden weitergeangelt werden.<br>
+            "Go BIG or Go Home"<br>
+            
+              </p>
+        
+            <br></p>
+            <button type="button" class="btn btn-lg btn-dark" id="btnDisabled" data-toggle="modal" data-target="#modal6" disabled>
+                Jetzt Anfragen
+              </button>          </div>
+        <div class="card-footer text-muted" style="background-color: #ffc2b3!important">
+          Momentan leider nicht Verfügbar
+        </div>
+      </div>
+<p style="color: white">
+      Alle Tageskarten inklusive<br>
+      Jede weitere Person 99€<br>
+      Gruppen bis max. 3 Angler<br>
+      Fischereiprüfung erforderlich
+    </p>
+    </div>
+    </div>
+  </section>
+      <!-- Footer -->
+      <footer class="page-footer font-small blue pt-4" style="background-color: white; padding-top: 0px !important">
+    
+        <div class="container-fluid text-center text-md-left">
+          <div class="row" style="justify-content: flex-end ">
+    
+              <!-- Links -->
+              <ul class="list-unstyled"style="margin-bottom: 0rem;">
+               
+                     
+                <li style="margin-top: 3px; margin-bottom: 5px;">            
+                        <a width="20px" href="datenschutz.html" style="margin-left: 15px; color: black !important; margin-right: 10px; text-decoration: none;">datenschutz</a>
+                        <a width="20px" href="impressum.html" style="color: black !important; margin-right: 10px; text-decoration: none;">impressum</a>
+    
+                    <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+                      <img src="facebook.png" width="20px" alt="fb">
+                    </a>
+                    <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+                      <img src="instagram.png" width="20px" alt="insta" style="margin-right: 10px; margin-left: 10px">
+                    </a>
+                    <a href="mailto:daniel@progressive-tackle.de" style="margin-right: 200px;">
+                        <img src="mail.png" width="20px" height="20px" alt="mail" id="header-mail" >
+                    </a>
+                </li>
+              </ul>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS, then Own Scripts -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+          <script>
+
+ 
+
+var screenWidth = window.screen.width;
+var isScrolled = false;
+
+if(screenWidth > 600){
+
+           $(function () {
+            var header = $(".navbar");
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+        
+              if (scroll >= 70) {
+                isScrolled = true;
+                header.removeClass('navbar').addClass("navbar-alt");
+                document.getElementById('header-facebook').src='facebook.png'
+                            document.getElementById('header-instagram').src='instagram.png'
+                            document.getElementById('header-mail').src='mail.png'
+              } else {
+                isScrolled = false;
+                header.removeClass("navbar-alt").addClass('navbar');
+                document.getElementById('header-facebook').src='facebook_inverted.png'
+                            document.getElementById('header-instagram').src='instagram_inverted.png'
+                            document.getElementById('header-mail').src='mail_inverted.png'
+              }
+            });
+          });
+        
+          $(document).ready(function() { 
+                                  $("#navigation").hover(function() { 
+                   document.getElementById('header-facebook').src='facebook.png'
+                            document.getElementById('header-instagram').src='instagram.png'
+                            document.getElementById('header-mail').src='mail.png'
+                    }, function() { 
+                            
+                            if(!isScrolled){
+                            document.getElementById('header-facebook').src='facebook_inverted.png'
+                            document.getElementById('header-instagram').src='instagram_inverted.png'
+                            document.getElementById('header-mail').src='mail_inverted.png'
+                    }}); 
+                });
+}        
+          </script>
+</body>
+
+</html>

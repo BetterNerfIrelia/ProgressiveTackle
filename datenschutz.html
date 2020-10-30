@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+  <title>Progressive Tackle</title>
+  <style>
+
+      @media screen and (max-width: 1000px) {
+
+        #navigation{
+    position: absolute;
+  }
+
+        #header-facebook{
+display: none;
+}
+#header-instagram{
+display: none;
+}
+
+
+
+        #datenschutz{
+  height: 500px;
+  width: 100%;
+  overflow-y: scroll;
+}
+         
+
+#rechtlicheHinweise{
+height: 500px;
+width: 100%;
+overflow-y: scroll;
+         }
+
+         #datenschutz-container{
+
+font-family: 'Orbitron'; 
+padding: 0 !important; 
+font-size: 3rem; 
+font-weight: 300;
+color: black;
+}
+
+#rechtlicheHinweise-container{
+
+font-family: 'Orbitron'; 
+padding: 0 !important; 
+font-size: 3rem; 
+font-weight: 300;
+color: black;
+
+}   
+
+#header-mail{
+    display: none;
+  }
+  
+  .navbar-brand {
+    color: black !important;
+        font-size: 1.2rem;
+      }
+  
+      .nav-link {
+        color:black;
+        font-size: 1rem;
+      }
+  
+      
+  
+      
+      .navbar-alt {
+        background-color: white !important;
+        height: 60px;
+        display: flex !important;
+        padding: 10px;
+      }
+  
+    
+  
+      .navbar-alt .nav-link {
+        color:#00e600;
+        font-size: 1rem;
+  
+      }
+  
+      .navbar-alt .navbar-brand {
+        color: black !important;
+        font-size: 1.2rem;
+  
+      }
+  
+    
+        
+            
+        
+            
+        
+        
+        
+        
+        }
+        
+        @media screen and (min-width: 1001px) {
+
+#datenschutz{
+  height: 500px;
+  width: 500px;
+  overflow-y: scroll;
+}
+
+#datenschutz-container{
+
+font-family: 'Orbitron'; 
+width: 500px; 
+padding: 0 !important; 
+font-size: 3rem; 
+font-weight: 300;
+color: black;
+}
+
+#rechtlicheHinweise-container{
+
+font-family: 'Orbitron'; 
+width: 500px; 
+padding: 0 !important; 
+font-size: 3rem; 
+font-weight: 300;
+color: black;
+
+}   
+
+#rechtlicheHinweise{
+height: 500px;
+width: 500px;
+overflow-y: scroll;
+         }
+        
+        
+        #dsgvo:hover{
+          cursor: pointer;
+        }
+        
+       
+
+a{
+  color:#00e600 !important;
+}
+
+a:hover{
+  text-decoration: none !important;
+  color:#00e600 !important;
+}
+
+    .btn:hover {
+      color: #00e600 !important;
+    }
+
+    .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color: black !important;
+      font-size: 1rem;
+    }
+
+    .navbar {
+      background-color: transparent !important;
+      height: 60px;
+      display: flex !important;
+
+    }
+
+    .navbar:hover {
+      background-color: black !important;
+      height: 60px;
+      display: flex !important;
+
+    }
+
+    .navbar-alt {
+      background-color: black !important;
+      height: 60px;
+      display: flex !important;
+
+    }
+
+    .navbar:hover .nav-link {
+      color: white !important;
+    }
+
+    .navbar-alt .nav-link {
+      color: white !important;
+    }
+
+    .navbar:hover .navbar-brand {
+      color: white !important;
+    }
+
+    .navbar-alt .navbar-brand {
+      color: white !important;
+    }
+        }
+  </style>
+</head>
+
+<body>
+   <!-- Navigation -->
+<nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+        <a  style="font-family: 'Orbitron'; margin-top: 5px;" class="navbar-brand" href="index.html">Progressive Tackle</a>
+
+        <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/">
+          <img src="facebook.png" width="20px" alt="fb" id="header-facebook">
+        </a>
+        <a href="https://www.instagram.com/zielfischzander.de/">
+          <img src="instagram.png" width="20px" alt="insta" id="header-instagram" style="margin-right: 10px; margin-left: 10px">
+        </a>
+        <a href="mailto:daniel@progressive-tackle.de">
+            <img src="mail.png" width="20px" height="20px" alt="mail" id="header-mail" style="margin-right: 20px;">
+        </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="coaching.html">Coaching
+              <span class="sr-only"></span>
+            </a>       
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tackle.html">Tackle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="xseries.html">X-Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partner.html">Partner</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<header></header>
+     
+    
+
+
+  <!-- Page Content -->
+  <section class="py-5">
+      <div class="container">
+          <br><br><br><br><br>
+          <a id="datenschutz-container" style="color: black !important;">Datenschutz</a>
+
+          <div id="datenschutz">
+      <br><br>      
+      1. ÜBERSICHT<br>
+      Durch den Besuch der Website des Anbieters können Informationen über den Zugriff (Datum, Uhrzeit, betrachtete Seite) gespeichert werden. Diese Daten gehören nicht zu den personenbezogenen Daten, sondern sind anonymisiert. Sie werden ausschließlich zu statistischen Zwecken ausgewertet. Eine Weitergabe an Dritte, zu kommerziellen oder nichtkommerziellen Zwecken, findet nicht statt.
+      Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.
+      Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.
+      <br><br>
+      2. IHRE BETROFFENENRECHTE<br>
+      Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
+      – Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung
+      – Berichtigung unrichtiger personenbezogener Daten
+      – Löschung Ihrer bei uns gespeicherten Daten
+      – Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen
+      – Widerspruch gegen die Verarbeitung Ihrer Daten bei uns und
+      – Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben.
+      Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
+      <br><br>
+      3. ZWECKE DER DATENVERARBEITUNG DURCH DIE VERANTWORTLICHE STELLE UND DRITTE<br>
+      Wir verarbeiten Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerklärung genannten Zwecken. Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den genannten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:
+      – Sie Ihre ausdrückliche Einwilligung dazu erteilt haben
+      – die Verarbeitung zur Abwicklung eines Vertrags mit Ihnen erforderlich ist
+      – die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist,
+      die Verarbeitung zur Wahrung berechtigter Interessen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben.
+      <br><br>
+      4. COOKIES<br>
+      Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.
+      Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen. Anhand der in Cookies enthaltenen Informationen können wir Ihnen die Navigation erleichtern und die korrekte Anzeige unserer Webseiten ermöglichen.
+      In keinem Fall werden die von uns erfassten Daten an Dritte weitergegeben oder ohne Ihre Einwilligung eine Verknüpfung mit personenbezogenen Daten hergestellt.
+      Natürlich können Sie unsere Website grundsätzlich auch ohne Cookies betrachten. Internet-Browser sind regelmäßig so eingestellt, dass sie Cookies akzeptieren. Im Allgemeinen können Sie die Verwendung von Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren. Bitte verwenden Sie die Hilfefunktionen Ihres Internetbrowsers, um zu erfahren, wie Sie diese Einstellungen ändern können. Bitte beachten Sie, dass einzelne Funktionen unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.
+      <br><br>
+      5. KONTAKTFORMULAR<br>
+      Treten Sie bzgl. Fragen jeglicher Art per E-Mail mit uns in Kontakt, erteilen Sie uns zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten automatisch gelöscht.
+      <br><br>
+      6. ÄNDERUNGEN UNSERER DATENSCHUTZBESTIMMUNGEN<br>
+      Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+      <br><br><br><br>
+      Quelle: Disclaimer von juraforum.de, connektar.de und datenschutz.org 
+    </div>
+    <br><br><br><br>
+
+
+<a id="rechtlicheHinweise-container" style="color: black !important;">Rechtliche<br> Hinweise</a>
+
+<div id="rechtlicheHinweise">
+
+      <br><br>
+     
+      
+      1. HAFTUNGSBESCHRÄNKUNG<br>
+Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Mit der reinen Nutzung der Website des Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.
+<br><br>
+2. EXTERNE LINKS<br>
+Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links“). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle dieser externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.
+<br><br>
+3. URHEBER- UND LEISTUNGSSCHUTZRECHTE<br>
+Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.
+<br><br>
+4. DATENSCHUTZ<br>
+Durch den Besuch der Website des Anbieters können Informationen über den Zugriff (Datum, Uhrzeit, betrachtete Seite) gespeichert werden. Diese Daten gehören nicht zu den personenbezogenen Daten, sondern sind anonymisiert. Sie werden ausschließlich zu statistischen Zwecken ausgewertet. Eine Weitergabe an Dritte, zu kommerziellen oder nichtkommerziellen Zwecken, findet nicht statt. Der Websitebetreiber erhebt, nutzt und gibt Ihre personenbezogenen Daten nur dann weiter, wenn dies im gesetzlichen Rahmen erlaubt ist oder Sie in die Datenerhebung einwilligen. Als personenbezogene Daten gelten sämtliche Informationen, welche dazu dienen, Ihre Person zu bestimmen und welche zu Ihnen zurückverfolgt werden können – also beispielsweise Ihr Name, Ihre E-Mail-Adresse und Telefonnummer. Nehmen Sie mit dem Websitebetreiber durch die angebotenen Kontaktmöglichkeiten Verbindung auf, werden Ihre Angaben gespeichert, damit auf diese zur Bearbeitung und Beantwortung Ihrer Anfrage zurückgegriffen werden kann. Ohne Ihre Einwilligung werden diese Daten nicht an Dritte weitergegeben.Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann. Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.
+<br><br>
+5. BESONDERE NUTZUNGSBEDINGUNGEN<br>
+Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.
+<br><br>
+6. RECHTE DES NUTZERS: AUSKUNFT, BERICHTIGUNG UND LÖSCHUNG<br>
+Sie als Nutzer erhalten auf Antrag Ihrerseits kostenlose Auskunft darüber, welche personenbezogenen Daten über Sie gespeichert wurden. Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht zur Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) kollidiert, haben Sie ein Anrecht auf Berichtigung falscher Daten und auf die Sperrung oder Löschung Ihrer personenbezogenen Daten.
+<br><br><br><br>
+
+Quelle: Disclaimer von juraforum.de, connektar.de und datenschutz.org 
+      
+      <br>
+    </div>
+        </div>
+    </section>
+  
+      
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4" style="background-color: black; padding-top: 0px !important">
+
+      <div class="container-fluid text-center text-md-left">
+        <div class="row" style="justify-content: flex-end ">
+
+          <!-- Links -->
+          <ul class="list-unstyled" style="margin-bottom: 0rem;">
+
+
+            <li style="margin-top: 3px; margin-bottom: 5px;">
+              <a width="20px" href="datenschutz.html"
+                style="margin-left: 15px; color: #00e600 !important; margin-right: 10px; text-decoration: none;">datenschutz</a>
+              <a width="20px" href="impressum.html"
+                style="color: white !important; margin-right: 10px; text-decoration: none;">impressum</a>
+
+              <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/">
+                <img src="facebook_inverted.png" width="20px" alt="fb" >
+              </a>
+              <a href="https://www.instagram.com/zielfischzander.de/">
+                <img src="instagram_inverted.png" width="20px" alt="insta"
+                  style="margin-right: 10px; margin-left: 10px">
+              </a>
+              <a href="mailto:daniel@progressive-tackle.de" style="margin-right: 200px;">
+                <img src="mail_inverted.png" width="20px" height="20px" alt="mail" id="header-mail"
+                  >
+              </a>
+            </li>
+          </ul>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS, then Own Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+
+
+var screenWidth = window.screen.width;
+var isScrolled = false;
+
+if(screenWidth > 600){
+
+           $(function () {
+            var header = $(".navbar");
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+              if (scroll >= 70) {
+                isScrolled = true;
+                header.removeClass('navbar').addClass("navbar-alt");
+               
+          document.getElementById('header-facebook').src='facebook_inverted.png'
+                    document.getElementById('header-instagram').src='instagram_inverted.png'
+                    document.getElementById('header-mail').src='mail_inverted.png'
+              } else {
+                isScrolled = false;
+                header.removeClass("navbar-alt").addClass('navbar');
+                document.getElementById('header-facebook').src='facebook.png'
+                    document.getElementById('header-instagram').src='instagram.png'
+                    document.getElementById('header-mail').src='mail.png'
+              }
+            });
+          });
+        
+          $(document).ready(function() { 
+                                  $("#navigation").hover(function() { 
+                                    document.getElementById('header-facebook').src='facebook_inverted.png'
+                    document.getElementById('header-instagram').src='instagram_inverted.png'
+                    document.getElementById('header-mail').src='mail_inverted.png'
+                    }, function() { 
+                            
+                            if(!isScrolled){
+                              document.getElementById('header-facebook').src='facebook.png'
+                    document.getElementById('header-instagram').src='instagram.png'
+                    document.getElementById('header-mail').src='mail.png'
+                    }}); 
+                });
+}
+  </script>
+</body>
+
+</html>

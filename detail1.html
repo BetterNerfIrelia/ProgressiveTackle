@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+
+  <title>Progressive Tackle</title>
+  <style>
+
+@media screen and (max-width: 1000px) {
+
+  #navigation{
+    position: absolute;
+  }
+
+  #header-facebook{
+display: none;
+}
+#header-instagram{
+display: none;
+}
+
+
+
+  #datenschutz{
+  height: 500px; 
+  width: 470px; 
+  overflow-y: scroll; 
+  padding: 20px;
+}
+
+  #box{
+    width:400px; 
+    height: 600px; 
+    margin-right: 30px; 
+    padding-top: 100px; 
+    display: none;
+  }
+
+#table{
+  width: 0px;
+}
+
+#prod{
+padding-right: 0px;
+ padding-left: 0px;
+
+}
+
+#header-mail{
+  display: none;
+}
+
+.navbar-brand {
+  color: black !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color:black;
+      font-size: 1rem;
+    }
+
+    
+
+    
+    .navbar-alt {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+      padding: 10px;
+    }
+
+  
+
+    .navbar-alt .nav-link {
+      color:#00e600;
+      font-size: 1rem;
+
+    }
+
+    .navbar-alt .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+
+  
+    
+
+
+
+
+}
+
+@media screen and (min-width: 1001px) {
+
+
+  
+
+
+
+  #datenschutz{
+
+  overflow-y: scroll; 
+  padding: 20px;
+}
+
+  #box{
+    width:400px; 
+    height: 600px; 
+    margin-right: 30px; 
+    padding-top: 100px; 
+    display: flex;
+  }
+
+  #table{
+  width: 500px;
+}
+
+
+#prod{
+padding-right: 0px;
+ padding-left: 0px;
+
+}
+
+
+
+
+#dsgvo:hover{
+cursor: pointer;
+}
+
+.btn:hover{
+color: #00e600 !important;
+}
+
+  .navbar-brand {
+    color: black !important;
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    color: black !important;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    background-color: transparent !important;
+    height: 60px;
+    display: flex !important;
+
+  }
+
+  .navbar:hover {
+    background-color: black !important;
+    height: 60px;
+    display: flex !important;
+
+  }
+
+  .navbar-alt {
+    background-color: black !important;
+    height: 60px;
+    display: flex !important;
+
+  }
+
+  .navbar:hover .nav-link {
+    color: white !important;
+  }
+
+  .navbar-alt .nav-link {
+    color: white !important;
+  }
+
+  .navbar:hover .navbar-brand {
+    color: white !important;
+  }
+
+  .navbar-alt .navbar-brand {
+    color: white !important;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+   #box { width: 1200px;  } /* EDGE */
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+          <a  style="font-family: 'Orbitron'; margin-top: 5px;" class="navbar-brand" href="index.html">Progressive Tackle</a>
+  
+          <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+            <img src="facebook.png" width="20px" alt="fb" id="header-facebook">
+          </a>
+          <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+            <img src="instagram.png" width="20px" alt="insta" id="header-instagram" style="margin-right: 10px; margin-left: 10px">
+          </a>
+          <a href="mailto:daniel@progressive-tackle.de" target="_blank">
+              <img src="mail.png" width="20px" height="20px" alt="mail" id="header-mail" style="margin-right: 20px;">
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="coaching.html" >Coaching
+                <span class="sr-only"></span>
+              </a>       
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tackle.html" style="color: #00e600  !important">Tackle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="xseries.html">X-Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partner.html">Partner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Modal -->
+  <form action="mailto:daniel@progressive-tackle.de?subject=Anfrage%20Zander%20Box" method="post" enctype="text/plain">
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="background-color: black; color: white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Anfrage</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: #00e600;">&NonBreakingSpace; Zander Box</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="color: white">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="align-items: flex-start">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Vorname*</label>
+                <input name="Vorname" type="text" class="form-control" id="exampleFormControlInput1" required>
+  
+                <label for="exampleFormControlInput1">Nachname*</label>
+                <input name="Nachname" type="text" class="form-control" id="exampleFormControlInput1" required>
+  
+                <label for="exampleFormControlInput1">Email Adresse</label>
+                <input name="Email" type="email" class="form-control" id="exampleFormControlInput1">
+  
+                <label for="exampleFormControlInput1">Telefonnummer*</label>
+                <input name="Telefonnummer" type="text" class="form-control" id="exampleFormControlInput1" required>
+                
+                <label for="exampleFormControlInput1"  for="exampleFormControlSelect1">Anzahl</label>
+                <select name="Anzahl" class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>  
+                </select>
+                <div class="form-group">
+  
+                  <div class="form-group">
+                    <label  for="exampleFormControlTextarea1">Nachricht</label>
+                    <textarea name="Nachricht" class="form-control" type="text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <br>
+                    <input type="checkbox" required  >
+                    <label  for="exampleFormControlInput1">Ich habe die <a id="dsgvo" style="color:#00e600;" data-toggle="modal" data-target="#modalDSGVO">DSGVO</a> gelesen und stimme dieser zu.</label>
+                  
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Abbrechen</button>
+            <button type="submit" class="btn btn-secondary">Anfrage bestätigen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="modalDSGVO" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="background-color: black; color: white">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">Datenschutzbestimmungen</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="color: white">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="align-items: flex-start">          
+              <form>
+                  <div id="datenschutz" >
+                      1. ÜBERSICHT<br><br>
+                      Durch den Besuch der Website des Anbieters können Informationen über den Zugriff (Datum, Uhrzeit, betrachtete Seite) gespeichert werden. Diese Daten gehören nicht zu den personenbezogenen Daten, sondern sind anonymisiert. Sie werden ausschließlich zu statistischen Zwecken ausgewertet. Eine Weitergabe an Dritte, zu kommerziellen oder nichtkommerziellen Zwecken, findet nicht statt.
+                      Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.
+                      Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.
+                      <br><br>
+                      2. IHRE BETROFFENENRECHTE<br><br>
+                      Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
+                      – Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung
+                      – Berichtigung unrichtiger personenbezogener Daten
+                      – Löschung Ihrer bei uns gespeicherten Daten
+                      – Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen
+                      – Widerspruch gegen die Verarbeitung Ihrer Daten bei uns und
+                      – Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben.
+                      Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
+                      <br><br>
+                      3. ZWECKE DER DATENVERARBEITUNG DURCH DIE VERANTWORTLICHE STELLE UND DRITTE<br><br>
+                      Wir verarbeiten Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerklärung genannten Zwecken. Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den genannten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:
+                      – Sie Ihre ausdrückliche Einwilligung dazu erteilt haben
+                      – die Verarbeitung zur Abwicklung eines Vertrags mit Ihnen erforderlich ist
+                      – die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist,
+                      die Verarbeitung zur Wahrung berechtigter Interessen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben.
+                      <br><br>
+                      4. COOKIES<br><br>
+                      Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.
+                      Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen. Anhand der in Cookies enthaltenen Informationen können wir Ihnen die Navigation erleichtern und die korrekte Anzeige unserer Webseiten ermöglichen.
+                      In keinem Fall werden die von uns erfassten Daten an Dritte weitergegeben oder ohne Ihre Einwilligung eine Verknüpfung mit personenbezogenen Daten hergestellt.
+                      Natürlich können Sie unsere Website grundsätzlich auch ohne Cookies betrachten. Internet-Browser sind regelmäßig so eingestellt, dass sie Cookies akzeptieren. Im Allgemeinen können Sie die Verwendung von Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren. Bitte verwenden Sie die Hilfefunktionen Ihres Internetbrowsers, um zu erfahren, wie Sie diese Einstellungen ändern können. Bitte beachten Sie, dass einzelne Funktionen unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.
+                      <br><br>
+                      5. KONTAKTFORMULAR<br><br>
+                      Treten Sie bzgl. Fragen jeglicher Art per E-Mail mit uns in Kontakt, erteilen Sie uns zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten automatisch gelöscht.
+                      <br><br>
+                      6. ÄNDERUNGEN UNSERER DATENSCHUTZBESTIMMUNGEN<br><br>
+                      Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
+                    </div>
+    <div class="form-group" style="text-align: left">
+  
+    <div class="form-group">
+  
+     
+     <div class="form-group">
+  
+    </div>
+  </div>
+  </div>
+  </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Schließen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Page Content -->
+  <section class="py-5">
+      <div class="container" style="padding-left: 0px">
+        <div class="product-image" style="display: flex">
+          <img id="box"
+             src="tacklebox _white.jpg"
+            alt="product" class="img-fluid" />
+  
+          <br><br>
+  
+          <section id="prod" class="product-details">
+  
+            <div class="container-fluid" style="padding-left: 0px">
+  
+              <div class="row" style="margin-top: 100px; margin-left: 30px">
+  
+                <div>
+                   <img src="untitled.svg" style="height: 25px; margin-bottom: 20px"  onmouseover="this.style.cursor='pointer';" onclick="location.href='tackle.html';"></img>
+                   <hr>
+                   <h1 >Progressive Tackle <br> </h1>
+                   <h2 class="mb-4">Zander BOX</h1>
+                  
+                  <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between mb-4">
+                    <ul class="list-inline mb-2 mb-sm-0">
+                      <li class="list-inline-item h4 font-weight-light mb-0">€ 449.00</li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                      <ul class="list-inline mr-2 mb-0">
+                        <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i></li>
+                        <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i></li>
+                        <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i></li>
+                        <li class="list-inline-item mr-0"><i class="fa fa-star text-primary"></i></li>
+                        <li class="list-inline-item mr-0"><i class="fa fa-star text-gray-300"></i></li>
+                    </div>
+                  </div>
+                  <p class="mb-4 text-muted">
+
+
+                      Das durchdachte Transportsystem für professionelle Angler<br>
+                      <hr><br>  
+
+                      <h5>Multiorganisatorisch – pragmatisch.</h5>
+                      Die Komposition des Progressive-Tackle box-in-box Systems legt das Hauptaugenmerk auf Sicherheit, 
+                      Übersichtlichkeit und die perfekt strukturierte Tackle-Aufbewahrungs-möglichkeit. 
+                      Die Staustruktur stellt 2 Lure-Boxen à 5 Abteile für Gummiköder/Wobbler und Sefo Spangen zur Verfügung.
+                      Das Flat-Case für Jigköpfe und eine Kleinteilebox bilden die Ergänzung. 
+                      <br>25% des Kofferinnenvolumens sind für persönlichen Stauraum wie Ausweismappe, Zange etc. kalkuliert.<br><br>
+                      
+                      <h5>Kompromisslose Komponentenkompatibilität</h5>
+                      Das Tackle System gewährleistet die absolute Flexibilität in puncto Aktiv-/Passivangeln. 
+                      Hierbei gilt es die höchst mögliche Fangeffizienz bei maximaler Gerätesicherheit und minimalem Tragegewicht zu generieren. 
+                      Die Qualität aller enthaltenen Produkte ist sehr hoch und für Prestige Angler geeignet. <br><br>
+                      
+
+                      - Waffenkoffer <br>
+                      - Automatisches Druckausgleichsventil <br>
+                      - Edelstahlbeschläge <br>
+                      - Ergonomischer Handgriff <br>
+                      - Noppenschaum Deckel <br>
+                      - Wasserdicht, bruchfest, leicht <br>
+                      - Zweistufige Verschlüsse <br>
+                      - Lock per Vorhängeschloss  <br>
+                      - Adaptives Boxensystem <br><br>
+
+
+
+
+
+
+
+  
+                      <table class="table" id="table">
+                          <thead>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">Koffer</th>
+                                  <td>1x</td>                                 
+    
+                                </tr>
+                            <tr>
+                              <th scope="row">Flat Case</th>
+                              <td>1x</td>
+                             
+                            </tr>
+                            <tr>
+                              <th scope="row">Vorfachmaterial</th>
+                              <td>1x</td>
+                             
+                            </tr>
+                            <tr>
+                              <th scope="row">Gummiring </th>
+                              <td>5x</td>
+                            
+                            </tr>
+                            <tr>
+                                <th scope="row">Sefo-Spangen</th>
+                                <td>15x</td>
+                                
+                              </tr>
+                              <tr>
+                            <tr>
+                              <th scope="row">Gummi Lures</th>
+                              <td>50x</td>
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row">High End Jigheads</th>
+                              <td>20x</td>
+                            
+                            </tr>
+                            <tr>
+                                <th scope="row">Snaps</th>
+                                <td>20x</td>
+                                
+                              </tr>
+                              <tr>
+                                  <th scope="row">Kugellager Wirbel</th>
+                                  <td>20x</td>
+                                
+                                </tr>
+                                <tr>
+                                    <th scope="row">Zander Ansitz Haken</th>
+                                    <td>20x</td>
+                                 
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Klemmblei</th>
+                                      <td>20x</td>
+                                     
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Beratung</th>
+                                        <td></td>
+                                      
+                                      </tr>
+                                    <tr>
+                                        <th scope="row">Versand</th>
+                                        <td></td>
+                                      
+                                      </tr>
+                                    
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                              
+                              </tr>
+                          </tbody>
+                        </table>
+                        Ab jetzt vorbestellbar
+
+                  
+
+                   
+                  </p>
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-12 detail-option mb-3">
+  
+                      </div>
+  
+                  
+                    </div>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modal1">
+                          Jetzt Anfragen
+                        </button> </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+  
+      
+     <!-- Footer -->
+     <footer class="page-footer font-small blue pt-4" style="background-color: black; padding-top: 0px !important">
+    
+        <div class="container-fluid text-center text-md-left">
+          <div class="row" style="justify-content: flex-end ">
+    
+              <!-- Links -->
+              <ul class="list-unstyled" style="margin-bottom: 0rem;">
+               
+                     
+                <li style="margin-top: 3px; margin-bottom: 5px;">            
+                        <a width="20px" href="datenschutz.html" style="margin-left: 15px; color: white !important; margin-right: 10px; text-decoration: none;">datenschutz</a>
+                        <a width="20px" href="impressum.html" style="color: white !important; margin-right: 10px; text-decoration: none;">impressum</a>
+    
+                    <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+                      <img src="facebook_inverted.png" width="20px" alt="fb" >
+                    </a>
+                    <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+                      <img src="instagram_inverted.png" width="20px" alt="insta" style="margin-right: 10px; margin-left: 10px">
+                    </a>
+                    <a href="mailto:daniel@progressive-tackle.de" style="margin-right: 200px;" target="_blank">
+                        <img src="mail_inverted.png" width="20px" height="20px" alt="mail" id="header-mail" >
+                    </a>
+                </li>
+              </ul>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS, then Own Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+
+
+
+
+var screenWidth = window.screen.width;
+var isScrolled = false;
+
+if(screenWidth > 600){
+
+           $(function () {
+            var header = $(".navbar");
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+              if (scroll >= 70) {
+                isScrolled = true;
+                header.removeClass('navbar').addClass("navbar-alt");
+               
+          document.getElementById('header-facebook').src='facebook_inverted.png'
+                    document.getElementById('header-instagram').src='instagram_inverted.png'
+                    document.getElementById('header-mail').src='mail_inverted.png'
+              } else {
+                isScrolled = false;
+                header.removeClass("navbar-alt").addClass('navbar');
+                document.getElementById('header-facebook').src='facebook.png'
+                    document.getElementById('header-instagram').src='instagram.png'
+                    document.getElementById('header-mail').src='mail.png'
+              }
+            });
+          });
+        
+          $(document).ready(function() { 
+                                  $("#navigation").hover(function() { 
+                                    document.getElementById('header-facebook').src='facebook_inverted.png'
+                    document.getElementById('header-instagram').src='instagram_inverted.png'
+                    document.getElementById('header-mail').src='mail_inverted.png'
+                    }, function() { 
+                            
+                            if(!isScrolled){
+                              document.getElementById('header-facebook').src='facebook.png'
+                    document.getElementById('header-instagram').src='instagram.png'
+                    document.getElementById('header-mail').src='mail.png'
+                    }}); 
+                });
+}
+
+
+  </script>
+
+</body>
+
+</html>

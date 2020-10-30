@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<!-- TODO: 
+            - css auslagern
+            - texte in json auslagern
+-->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+
+  <title>Progressive Tackle</title>
+  <style>
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #navigation{
+    position: absolute;
+  }
+
+  
+  #mobile-carousel{
+    display: inline;
+  }
+
+  #desktop-carousel{
+    display: none;
+  }
+
+
+  
+
+  #header-facebook{
+display: none;
+}
+#header-instagram{
+display: none;
+}
+
+
+
+#prod{
+  margin-left: 0;
+}
+
+
+#header-mail{
+  display: none;
+}
+
+.navbar-brand {
+  color: black !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color:#00e600;
+      font-size: 1rem;
+    }
+
+    
+
+    
+    .navbar-alt {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+      padding: 10px;
+    }
+
+  
+
+    .navbar-alt .nav-link {
+      color:#00e600;
+      font-size: 1rem;
+
+    }
+
+    .navbar-alt .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+
+    a:hover{
+      text-decoration: none !important;
+    }
+
+    
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1001px) {
+
+  #mobile-carousel{
+    display: none;
+  }
+
+  #desktop-carousel{
+    display: inline;
+  }
+
+
+  #prod{
+  margin-left: 38%;
+}
+
+#dsgvo:hover{
+  cursor: pointer;
+}
+
+.btn:hover{
+color: #00e600 !important;
+}
+
+#btnDisabled:hover{
+color: red !important;
+}
+
+    .navbar-brand {
+      color: white !important;
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-size: 1rem;
+    }
+
+    .navbar {
+      background-color: transparent !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar:hover {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar-alt {
+      background-color: white !important;
+      height: 60px;
+      display: flex !important;
+    }
+
+    .navbar:hover .nav-link {
+      color: black !important;
+      font-size: 1rem;
+
+    }
+
+    .navbar-alt .nav-link {
+      color: black !important;
+      font-size: 1rem;
+
+    }
+
+    .navbar:hover .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+
+    .navbar-alt .navbar-brand {
+      color: black !important;
+      font-size: 1.2rem;
+
+    }
+    a:hover{
+      text-decoration: none !important;
+    }
+
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+        <a style="font-family: 'Orbitron'; margin-top: 5px;" class="navbar-brand" href="index.html">Progressive Tackle</a>
+
+      <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+          <img src="facebook_inverted.png" width="20px" alt="fb" id="header-facebook">
+        </a>
+        <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+          <img src="instagram_inverted.png" width="20px" alt="insta" id="header-instagram" style="margin-right: 10px; margin-left: 10px">
+        </a>
+        <a href="mailto:daniel@progressive-tackle.de" target="_blank">
+          <img src="mail_inverted.png" width="20px" height="20px" alt="mail" id="header-mail" style="margin-right: 20px;">
+        </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="coaching.html">Coaching
+              <span class="sr-only">(current)</span>
+            </a>       
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tackle.html">Tackle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="xseries.html">X-Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partner.html">Partner</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- DESKTOP-CAROUSEL -->
+
+  <header id="desktop-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+
+      </ol>      <div class="carousel-inner" role="listbox">
+     
+        <div class="carousel-item active" data-interval="7000" style="background-image: url('desktop6.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+        <div id="carousel-mobile" class="carousel-item" data-interval="7000" style="background-image: url('desktop1a.png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        
+        <div class="carousel-item" data-interval="7000" style="background-image: url('desktop2.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        
+        <div class="carousel-item" data-interval="7000" style="background-image: url('desktop4.jpeg')">
+          <div class="carousel-caption d-none d-md-block">        
+          </div>
+        </div>
+   
+
+
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </header>
+
+
+<!-- MOBILE-CAROUSEL -->
+
+
+  <header id="mobile-carousel">
+    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+      
+
+
+
+      </ol>      <div class="carousel-inner" role="listbox">
+     
+        <div class="carousel-item active" data-interval="7000" style="background-image: url('mobile1.png')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+        <div class="carousel-item" data-interval="7000" style="background-image: url('mobile2.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        
+      
+        
+        <div class="carousel-item" data-interval="7000" style="background-image: url('mobile4.png')">
+          <div class="carousel-caption d-none d-md-block">        
+          </div>
+        </div>
+        
+       
+
+        <div class="carousel-item" data-interval="7000" style="background-image: url('mobile6.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+        <div class="carousel-item" data-interval="7000" style="background-image: url('mobile7.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+        <div class="carousel-item" data-interval="7000" style="background-image: url('mobile8.jpeg')">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+
+    
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </header>
+
+  <!-- Page Content -->
+  <section class="py-5" style="background-color: black;">
+    <div class="container">
+      <a class="nav-link" href="coaching.html" style="font-family: 'Orbitron'; color: white !important; width: 200px; padding: 0 !important; font-size: 3.5rem; font-weight: 300">Coaching</a>
+      <br>
+      <p style="color: white;">Primär gilt es eine realistische Fangchance auf Zander und andere Raubfische am Wasser zu generieren.
+          In weiterer Folge spielt die Selektion der Größe des Zielfisches eine bedeutende Rolle.
+          Die State of the Art Techniken der modernen Aktiv- & Passiv-Angelei, gepaart mit ultra-fängigen Ködern und 
+          über Jahrzehnte perfektionierte Montagen, sind die wichtigsten Parameter hinsichtlich deiner persönlichen Zielfisch Challenge.</p>
+        <br><br>
+        <hr style="border-color: white">
+        <a class="nav-link" href="tackle.html" style="font-family: 'Orbitron';color: white !important; width: 150px; padding: 0 !important; font-size: 3.5rem; font-weight: 300">Tackle</a>
+
+      <br>
+      <p style="color: white;">Die Progressive Tackle Zander Box <br>
+          Multiorganisatorisch – pragmatisch</p>
+        <br><br>
+        <hr style="border-color: white">
+      <a class="nav-link" href="xseries.html" style="font-family: 'Orbitron';color: white !important; width: 300px; padding: 0 !important; font-size: 3.5rem; font-weight: 300">X-Series</a>
+    <br>
+      <p style="color: white;">
+          Diese Rutenserie ist der perfekte Wegbegleiter zu deinem Ziel-Raubfisch.
+          High-Quality Material mit semi-fast bis fast Aktionen und kompromissloser Progressivität sind 
+          die eindeutigen Kredos des erfolgreichen Raubfsichanglers.
+          Konzipiere / modifiziere / baue & designe eine für 
+          deine Bedürfnisse perfekte Rute in hochwertigster Materialausführung.
+          Reparaturen & Modifikationen werden auf Anfrage und nach persönlicher Beratung entgegengenommen.</p>
+      <hr>
+      <br><br>
+        <hr style="border-color: white">
+        <a class="nav-link" href="partner.html" style="font-family: 'Orbitron';color: white !important; width: 150px; padding: 0 !important; font-size: 3.5rem; font-weight: 300">Partner</a>
+
+      <br>
+      <p style="color: white;">
+        Gemeinsam mehr erreichen.<br>
+Großer Dank gilt den Partnern die uns mit ihren Produkten/Ratschlägen tatkräftig unterstützen und zur Seite stehen. <br>
+Allen voran royber.de die mich persönlich sehr unterstützen, meine Köderserie produzieren und extrem gute Qualität abliefern.
+
+        </p>
+        <br><br>
+    </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: white; padding-top: 0px !important">
+    
+      <div class="container-fluid text-center text-md-left">
+        <div class="row" style="justify-content: flex-end ">
+  
+            <!-- Links -->
+            <ul class="list-unstyled"style="margin-bottom: 0rem;">
+             
+                   
+              <li style="margin-top: 3px; margin-bottom: 5px;">            
+                      <a width="20px" href="datenschutz.html" style= "margin-left: 15px; color: black !important; margin-right: 10px; text-decoration: none;">datenschutz</a>
+                      <a width="20px" href="impressum.html" style="color: black !important; margin-right: 10px; text-decoration: none;">impressum</a>
+  
+                  <a href="https://www.facebook.com/Progressive-Tackle-1785713901574396/" target="_blank">
+                    <img src="facebook.png" width="20px" alt="fb">
+                  </a>
+                  <a href="https://www.instagram.com/zielfischzander.de/" target="_blank">
+                    <img src="instagram.png" width="20px" alt="insta"  style="margin-right: 10px; margin-left: 10px">
+                  </a>
+                  <a href="mailto:daniel@progressive-tackle.de" style="margin-right: 200px;" target="_blank">
+                      <img src="mail.png" width="20px" height="20px" alt="mail" id="header-mail" >
+                  </a>
+              </li>
+            </ul>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS, then Own Scripts -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+              crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+              crossorigin="anonymous"></script>
+            <script>
+
+
+
+var screenWidth = window.screen.width;
+var isScrolled = false;
+
+if(screenWidth > 600){
+
+           $(function () {
+            var header = $(".navbar");
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+        
+              if (scroll >= 70) {
+                isScrolled = true;
+                header.removeClass('navbar').addClass("navbar-alt");
+                document.getElementById('header-facebook').src='facebook.png'
+                            document.getElementById('header-instagram').src='instagram.png'
+                            document.getElementById('header-mail').src='mail.png'
+              } else {
+                isScrolled = false;
+                header.removeClass("navbar-alt").addClass('navbar');
+                document.getElementById('header-facebook').src='facebook_inverted.png'
+                            document.getElementById('header-instagram').src='instagram_inverted.png'
+                            document.getElementById('header-mail').src='mail_inverted.png'
+              }
+            });
+          });
+        
+          $(document).ready(function() { 
+                                  $("#navigation").hover(function() { 
+                   document.getElementById('header-facebook').src='facebook.png'
+                            document.getElementById('header-instagram').src='instagram.png'
+                            document.getElementById('header-mail').src='mail.png'
+                    }, function() { 
+                            
+                            if(!isScrolled){
+                            document.getElementById('header-facebook').src='facebook_inverted.png'
+                            document.getElementById('header-instagram').src='instagram_inverted.png'
+                            document.getElementById('header-mail').src='mail_inverted.png'
+                    }}); 
+                });
+}
+            </script>
+</body>
+
+</html>
